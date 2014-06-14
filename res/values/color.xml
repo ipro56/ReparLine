@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="redReparline">#ff3A4A</color>
+    <color name="greenReparline">#00C560</color>
+    <color name="blueReparline">#008DF9</color>
+    <color name="yellowReparline">#ffB700</color>
+
+</resources>

@@ -1,0 +1,38 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent" >
+
+    <com.edmodo.cropper.CropImageView
+        xmlns:custom="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/cropImageView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_centerInParent="true"
+        android:layout_gravity="center" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/buttonRotateImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/cropImageView"
+        android:layout_margin="10dp"
+        android:text="@string/rotateImage"
+        bootstrapbutton:bb_icon_right="fa-pencil"
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="default"
+        bootstrapbutton:bb_type="primary" />
+
+    <com.beardedhen.androidbootstrap.BootstrapButton
+        android:id="@+id/buttonUploadImage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/cropImageView"
+        android:layout_margin="10dp"
+        android:text="@string/uploadImage"
+        bootstrapbutton:bb_icon_left="fa-floppy-o"
+        bootstrapbutton:bb_roundedCorners="true"
+        bootstrapbutton:bb_size="default"
+        bootstrapbutton:bb_type="success" />
+
+</RelativeLayout>

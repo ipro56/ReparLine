@@ -1,0 +1,12 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.droidstore.reparline.activities.PostIncidence" >
+
+    <item
+        android:id="@+id/check"
+        android:icon="@drawable/check"
+        android:title="@string/checkIncidence"
+        app:showAsAction="ifRoom"/>
+
+</menu>

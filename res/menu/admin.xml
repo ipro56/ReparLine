@@ -1,0 +1,17 @@
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context="com.droidstore.reparline.activities.IncidenceView" >
+
+    <item
+        android:id="@+id/editIncidence"
+        android:icon="@drawable/edit"
+        android:title="@string/editIncidence"
+        app:showAsAction="ifRoom"/>
+    <item
+        android:id="@+id/deleteIncidence"
+        android:icon="@drawable/delete"
+        android:title="@string/deleteIncidence"
+        app:showAsAction="ifRoom"/>
+
+</menu>

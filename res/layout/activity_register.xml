@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingBottom="35dp"
+        android:paddingLeft="35dp"
+        android:paddingRight="35dp"
+        android:paddingTop="10dp" >
+
+        <TextView
+            android:id="@+id/nameLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="@string/nameLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputNameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nameLabelRegister"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <TextView
+            android:id="@+id/surnameLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputNameRegister"
+            android:text="@string/surnameLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputSurnameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/surnameLabelRegister"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <TextView
+            android:id="@+id/usernameLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputSurnameRegister"
+            android:text="@string/emailLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputUsernameRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameLabelRegister"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <TextView
+            android:id="@+id/passwordLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputUsernameRegister"
+            android:text="@string/passwordLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputPasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/passwordLabelRegister"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <TextView
+            android:id="@+id/repasswordLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputPasswordRegister"
+            android:text="@string/repasswordLabel"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputRepasswordRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/repasswordLabelRegister"
+            android:inputType="textPassword"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <TextView
+            android:id="@+id/phoneLabelRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputRepasswordRegister"
+            android:text="@string/phone"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+
+        <com.beardedhen.androidbootstrap.BootstrapEditText
+            android:id="@+id/inputPhoneRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/phoneLabelRegister"
+            android:layout_marginBottom="30dp"
+            android:inputType="phone"
+            android:singleLine="true"
+            fontawesometext:be_roundedCorners="true"
+            fontawesometext:be_state="primary" />
+
+        <Button
+            android:id="@+id/buttonRegister"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/inputPhoneRegister"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:background="@drawable/selector_button_register"
+            android:padding="10dp"
+            android:text="@string/registerButton"
+            android:textColor="#fff"
+            android:textSize="18sp"
+            android:textStyle="bold" />
+    </RelativeLayout>
+
+</ScrollView>

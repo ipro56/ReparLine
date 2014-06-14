@@ -1,0 +1,93 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" >
+
+        <ImageView
+            android:id="@+id/userImageIncidence"
+            android:layout_width="65dp"
+            android:layout_height="65dp"
+            android:layout_margin="15dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/style_userimage_drawer_main"
+            android:contentDescription="@string/description"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo" />
+
+        <TextView
+            android:id="@+id/usernameIncidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_toRightOf="@id/userImageIncidence"
+            android:textSize="18sp" />
+
+        <TextView
+            android:id="@+id/dateIndidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/usernameIncidence"
+            android:layout_marginTop="10dp"
+            android:layout_toRightOf="@id/userImageIncidence"
+            android:textColor="@android:color/darker_gray"
+            android:textSize="16sp" />
+
+        <TextView
+            android:id="@+id/titleIncidence"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userImageIncidence"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="20dp"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/descriptionIncidence"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/titleIncidence"
+            android:layout_margin="15dp"
+            android:background="@drawable/style_description_incidence"
+            android:padding="10dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/descriptionIncidence"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/buttonPrivateIncidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/privateIncidence"
+                bootstrapbutton:bb_icon_right="fa-lock"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_size="default"
+                bootstrapbutton:bb_type="warning" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/buttonCloseIncidence"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="10dp"
+                android:text="@string/closeIncidence"
+                bootstrapbutton:bb_icon_right="fa-eye-slash"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_size="default"
+                bootstrapbutton:bb_type="primary" />
+        </LinearLayout>
+    </RelativeLayout>
+
+</ScrollView>

@@ -1,0 +1,226 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:bootstrap="http://schemas.android.com/apk/res-auto"
+    xmlns:bootstrapbutton="http://schemas.android.com/apk/res-auto"
+    xmlns:fontawesometext="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    tools:context="com.droidstore.reparline.fragments.UserFragment" >
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="20dp" >
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/buttonChangeImage"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_margin="10dp"
+            android:text="@string/editButton"
+            bootstrapbutton:bb_icon_left="fa-pencil"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="default"
+            bootstrapbutton:bb_type="primary" />
+
+        <ImageView
+            android:id="@+id/userImageProfile"
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:adjustViewBounds="true"
+            android:background="@drawable/style_userimage_drawer_main"
+            android:contentDescription="@string/action_settings"
+            android:padding="5dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/demo" />
+
+        <TextView
+            android:id="@+id/labelPersonalData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/userImageProfile"
+            android:layout_marginTop="30dp"
+            android:text="@string/personalDataLabel"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line1UserFragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/labelPersonalData"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <LinearLayout
+            android:id="@+id/linearOneUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line1UserFragment"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/nameLabel"
+                android:textSize="16sp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/inputNameUserFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:singleLine="true"
+                fontawesometext:be_roundedCorners="true"
+                fontawesometext:be_state="primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearTwoUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearOneUser"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/surnameLabel"
+                android:textSize="16sp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/inputSurnameUserFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:singleLine="true"
+                fontawesometext:be_roundedCorners="true"
+                fontawesometext:be_state="primary" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/linearThreeUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearTwoUser"
+            android:layout_marginTop="15dp"
+            android:gravity="center"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1.5"
+                android:text="@string/phone"
+                android:textSize="16sp" />
+
+            <com.beardedhen.androidbootstrap.BootstrapEditText
+                android:id="@+id/inputPhoneUserFragment"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="3"
+                android:singleLine="true"
+                fontawesometext:be_roundedCorners="true"
+                fontawesometext:be_state="primary" />
+        </LinearLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/buttonSaveData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearThreeUser"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/saveData"
+            bootstrapbutton:bb_icon_left="fa-check"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="default"
+            bootstrapbutton:bb_type="success" />
+
+        <TextView
+            android:id="@+id/labelOtherData"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/buttonSaveData"
+            android:layout_marginTop="10dp"
+            android:text="@string/privateData"
+            android:textSize="16sp"
+            android:textStyle="bold" />
+
+        <View
+            android:id="@+id/line2UserFragment"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"
+            android:layout_below="@id/labelOtherData"
+            android:layout_marginTop="5dp"
+            android:background="@android:color/darker_gray" />
+
+        <RelativeLayout
+            android:id="@+id/linearFourUser"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/line2UserFragment"
+            android:layout_marginTop="8dp"
+            android:baselineAligned="true"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:id="@+id/labelLocal"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="5dp"
+                android:layout_marginTop="10dp"
+                android:text="@string/labelLocation"
+                android:textSize="15sp"
+                android:textStyle="bold" />
+
+            <TextView
+                android:id="@+id/valueCityLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelLocal"
+                android:layout_marginLeft="8dp" />
+
+            <TextView
+                android:id="@+id/valueStreetLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/valueCityLocation"
+                android:layout_marginLeft="8dp"
+                android:text="@string/withoutData" />
+
+            <com.beardedhen.androidbootstrap.BootstrapButton
+                android:id="@+id/buttonChangeLocation"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/labelLocal"
+                android:layout_marginLeft="20dp"
+                android:layout_toRightOf="@id/valueStreetLocation"
+                bootstrapbutton:bb_icon_left="fa-map-marker"
+                bootstrapbutton:bb_roundedCorners="true"
+                bootstrapbutton:bb_size="default"
+                bootstrapbutton:bb_type="warning" />
+        </RelativeLayout>
+
+        <com.beardedhen.androidbootstrap.BootstrapButton
+            android:id="@+id/buttonEditPassword"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/linearFourUser"
+            android:layout_marginBottom="15dp"
+            android:layout_marginTop="15dp"
+            android:text="@string/editPassword"
+            bootstrapbutton:bb_icon_left="fa-key"
+            bootstrapbutton:bb_roundedCorners="true"
+            bootstrapbutton:bb_size="default"
+            bootstrapbutton:bb_type="inverse" />
+    </RelativeLayout>
+
+</ScrollView>
